@@ -1,0 +1,59 @@
+.section-serv{
+    padding-bottom: 150px;
+}
+// Заголовок
+.wrap-serv-text{
+    text-align: center;
+    padding-bottom: 80px;
+    color: var(--color-text);
+}
+.section-serv-h3{
+    font-family: "Lato-Black";
+    font-size: 25px;
+    margin: 8px 8px 0 8px;
+}
+.section-serv-desc{
+    font-family: "Lato-Regular";
+    margin: 0px 8px 8px 8px;
+    font-size: 14px;
+
+}
+//текст заголовок h5 и p
+.grid-serv-h5{
+    margin-bottom: 10px;
+    font-family: "Lato-Black";
+}
+.grid-serv-p{
+    font-family: "Lato-light";
+    line-height: 1.5em;
+    color: #7b7b7b;
+}
+.grid-serv-h5,
+.grid-serv-p{
+    margin-top: 0 ;
+}
+// grid
+.grid-container-serv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 88px;
+    row-gap: 65px;
+    color: var(--color-text);
+}
+
+// настройка контейнера grid
+.grid-container-serv__item{
+    position: relative;
+    font-size: 14px;
+    
+}
+.center-serv{
+margin-left: 100px;
+}
+.grid-container-serv__item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

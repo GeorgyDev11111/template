@@ -1,0 +1,30 @@
+.slick-dots li button:before {
+    font-size: 20px;
+    padding-top:90px ;
+}
+.slider{
+    z-index: 1;
+}
+.wrap-slider{
+    display: flex;
+    flex-direction: column;
+    max-width: 464px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.bg-slider{
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    top:-19px;
+    left: -95px;
+}
+.cont-wrap-slider{
+    width: 452px;
+    height: 245px;
+}
+.cont-wrap-slider > img {
+    border-radius: 2px;
+    margin-left: 5px;
+}

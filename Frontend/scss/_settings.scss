@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+::placeholder{
+     color: #a9a9a9;
+     font-size: 13px;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

@@ -1,0 +1,69 @@
+// большой блок
+.section-about-us{
+    padding-bottom: 750px;
+    color: var(--color-white);
+}
+
+.wrapp-about-us-img{
+    position: relative;
+    float: left;
+    width: 570px;
+    height: 623px;
+    overflow: visible;
+}
+.wrapp-about-us{
+    position: relative;
+    float: right;   
+    width: 570px;
+    height: 623px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.About-as-insi{
+    padding-left: 81px;
+}
+.wrapp-about-us-img > img {
+    position: absolute;
+    left:-280px;
+}
+.about-yellow-bg{
+    position: absolute;
+    width: 100%;
+    height: 623px;
+    background: #ffc155;
+    z-index: -2;
+}
+
+// текст h5 p
+.about-us-title{
+    font-family: "Lato-Black";
+    font-size: 30px;
+    margin: 0px 0 25px 0;
+}
+.about-us-desc{
+    font-family: "Lato-Regular";
+    font-size: 13px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+}
+.btn-about-us{
+    font-family: "Lato-Regular";
+    appearance: none;
+    outline-offset: 0;
+    outline: 0;
+    background: #ffc155;
+    border: 1px solid #e7ad48;
+    margin-top: 15px;
+    padding: 15px 30px;
+    &:hover{
+        color: red;
+        border-color: red; 
+    }
+    &:active{
+        color: green;
+        border-color: green; 
+    }
+    color: var(--color-white);
+}

@@ -1,0 +1,14 @@
+{
+  "name": "product",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "sass --watch Frontend/index.scss Frontend/css/main.css"
+  },
+  "author": "GeorgyDev11111",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}

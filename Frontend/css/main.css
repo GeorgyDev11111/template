@@ -1,0 +1,373 @@
+:root {
+  --text-secondary: #5b5b66;
+  --color-white: white;
+  --color-text: #394b50;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+::placeholder {
+  color: #a9a9a9;
+  font-size: 13px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@font-face {
+  font-family: Lato-Black;
+  src: url("../fonts/Lato/Lato-Black.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lato-Bold;
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lato-light;
+  src: url("../fonts/Lato/Lato-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lato-Regular;
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  font-family: Lato-Regular;
+}
+
+.header-form-bg-royal {
+  z-index: -1;
+  background: #709dca;
+  position: absolute;
+  top: 93.02px;
+  height: 589px;
+  width: 100%;
+}
+
+.header-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19.82px 0 21.82px 0;
+}
+
+.nav-panel {
+  font-size: 14px;
+}
+.nav-panel__list {
+  display: flex;
+}
+.nav-panel__link {
+  display: inline-block;
+  padding: 9.5px 20px 9.5px 20px;
+  color: #8e8e8e;
+  border-radius: 2px;
+}
+.nav-panel__item:first-child > a:first-child {
+  color: var(--color-white);
+  background: #ffbb42;
+}
+.nav-panel__link:hover, .nav-panel__item:first-child > a:first-child:hover {
+  color: #000;
+}
+.nav-panel__link:active, .nav-panel__item:first-child > a:first-child:active {
+  color: red;
+}
+
+.header-form-wrap-container {
+  padding-top: 110px;
+  padding-bottom: 67px;
+}
+
+.header-form-wrap-text {
+  text-align: center;
+}
+
+.header-form-h3 {
+  font-size: 35px;
+  margin: 8px 0;
+  font-family: "Lato-Black";
+  color: var(--color-white);
+}
+
+.header-form-desc {
+  margin: 8px 0;
+  word-spacing: 2px;
+  color: var(--color-white);
+  font-family: "Lato-light";
+}
+
+.header-form-wrap-form {
+  padding-top: 30px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-header__content {
+  margin-right: 10px;
+}
+.form-header__input {
+  outline: 0;
+  outline-offset: 0;
+  border: none;
+  width: 284.01px;
+  background-color: var(--color-white);
+  border-radius: 2px;
+  padding: 13.83px 36.999px 13.83px 36.999px;
+}
+.form-header__btn {
+  font-size: 14px;
+  width: 211px;
+  height: 46.03px;
+  background: #ffbb42;
+  margin: 0;
+  border: none;
+  border-radius: 2px;
+  color: var(--color-white);
+}
+.form-header__btn:hover {
+  color: #000;
+}
+.form-header__btn:active {
+  color: red;
+}
+
+.form-header__name-ico,
+.form-header__email-ico,
+.form-header__call-ico {
+  display: inline-block;
+  position: relative;
+}
+
+.form-header__name-ico::before,
+.form-header__email-ico::before,
+.form-header__call-ico::before {
+  content: "";
+  width: 16px;
+  height: 13px;
+  position: absolute;
+  top: 16.5px;
+  left: 16.5px;
+}
+
+.form-header__name-ico::before {
+  background: url(../img/user-solid.svg) no-repeat;
+}
+
+.form-header__email-ico::before {
+  background: url(../img/email.svg) no-repeat;
+}
+
+.form-header__call-ico::before {
+  background: url(../img/phone-solid.svg) no-repeat;
+}
+
+.slick-dots li button:before {
+  font-size: 20px;
+  padding-top: 90px;
+}
+
+.slider {
+  z-index: 1;
+}
+
+.wrap-slider {
+  display: flex;
+  flex-direction: column;
+  max-width: 464px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.bg-slider {
+  display: inline-block;
+  margin: 0 auto;
+  position: absolute;
+  top: -19px;
+  left: -95px;
+}
+
+.cont-wrap-slider {
+  width: 452px;
+  height: 245px;
+}
+
+.cont-wrap-slider > img {
+  border-radius: 2px;
+  margin-left: 5px;
+}
+
+.main {
+  padding-top: 170px;
+}
+
+.section-serv {
+  padding-bottom: 150px;
+}
+
+.wrap-serv-text {
+  text-align: center;
+  padding-bottom: 80px;
+  color: var(--color-text);
+}
+
+.section-serv-h3 {
+  font-family: "Lato-Black";
+  font-size: 25px;
+  margin: 8px 8px 0 8px;
+}
+
+.section-serv-desc {
+  font-family: "Lato-Regular";
+  margin: 0px 8px 8px 8px;
+  font-size: 14px;
+}
+
+.grid-serv-h5 {
+  margin-bottom: 10px;
+  font-family: "Lato-Black";
+}
+
+.grid-serv-p {
+  font-family: "Lato-light";
+  line-height: 1.5em;
+  color: #7b7b7b;
+}
+
+.grid-serv-h5,
+.grid-serv-p {
+  margin-top: 0;
+}
+
+.grid-container-serv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 88px;
+  row-gap: 65px;
+  color: var(--color-text);
+}
+
+.grid-container-serv__item {
+  position: relative;
+  font-size: 14px;
+}
+
+.center-serv {
+  margin-left: 100px;
+}
+
+.grid-container-serv__item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-about-us {
+  padding-bottom: 750px;
+  color: var(--color-white);
+}
+
+.wrapp-about-us-img {
+  position: relative;
+  float: left;
+  width: 570px;
+  height: 623px;
+  overflow: visible;
+}
+
+.wrapp-about-us {
+  position: relative;
+  float: right;
+  width: 570px;
+  height: 623px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.About-as-insi {
+  padding-left: 81px;
+}
+
+.wrapp-about-us-img > img {
+  position: absolute;
+  left: -280px;
+}
+
+.about-yellow-bg {
+  position: absolute;
+  width: 100%;
+  height: 623px;
+  background: #ffc155;
+  z-index: -2;
+}
+
+.about-us-title {
+  font-family: "Lato-Black";
+  font-size: 30px;
+  margin: 0px 0 25px 0;
+}
+
+.about-us-desc {
+  font-family: "Lato-Regular";
+  font-size: 13px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+}
+
+.btn-about-us {
+  font-family: "Lato-Regular";
+  appearance: none;
+  outline-offset: 0;
+  outline: 0;
+  background: #ffc155;
+  border: 1px solid #e7ad48;
+  margin-top: 15px;
+  padding: 15px 30px;
+  color: var(--color-white);
+}
+.btn-about-us:hover {
+  color: red;
+  border-color: red;
+}
+.btn-about-us:active {
+  color: green;
+  border-color: green;
+}
+
+/*# sourceMappingURL=main.css.map */
