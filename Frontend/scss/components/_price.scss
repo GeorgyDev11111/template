@@ -1,0 +1,128 @@
+/* 
+ * :root управление отступами внутри абсолютного фона
+ *
+ */
+:root{
+    --height: 850px;
+}
+//
+.section-price{
+    padding-bottom: 150px;
+}
+// задний фон секции
+.price-form-bg-space-gray{
+    z-index: -1;
+    height: var(--height);
+    width: 100%;
+    background: #e7edf3;
+    position: absolute;
+    left: -1px;
+}
+// стили верхнего заголовка + описание
+.section-price-desc{
+    text-align: center;
+    margin-bottom: 29px;
+}
+.section-price-h4{
+    font-family: "Lato-Black";
+    font-weight: 900;
+    font-size: 27px;
+    margin-bottom: 0;
+    word-spacing: 1px;
+    color: var(--color-text);
+}
+.section-price-p{
+    font-family: "Lato-Regular";
+    font-size: 16px;
+    margin-top: 0;
+    color: #75888d;
+    word-spacing: 1px;
+}
+
+/* 
+ * card style
+ *
+ */
+
+.wrapp-section-price{
+    margin: 0;
+    height: var(--height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-price-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.font-inner-price{
+    font-family: 'Lato-Regular';
+    font-size: 12px;
+    line-height: 1.5em;
+}
+//card style 1
+.section-price-card-1{
+    background: white;
+    width: 388px;
+    height: 440px;
+    border: 1px solid #ccd5df;
+    border-radius: 2px;
+    padding: 27px;
+    text-align: center;
+    color: #818b95;
+}
+//card style 2
+.section-price-card-2{
+    background: #709dca;
+    width: 395px;
+    height: 501px;
+    border: 1px solid #709dca;
+    color: var(--color-white);
+    padding: 57.5px 27px 65px 27px ;
+    border-radius: 2px;
+    text-align: center;
+}
+/* style text inside common style 
+ *      card 1 and card 2
+ *         
+ */
+.price-card-title-1,
+.price-card-title-2{
+    font-family: "Lato-Light";
+    font-weight: 200;
+    font-size: 22px;
+    margin:30px 0 30px 0 ;
+}
+.price-card-price-1,
+.price-card-price-2{
+    font-size: 45px;
+    font-weight: bold;
+}
+.price-card-desc-1,
+.price-card-desc-2{
+    display: block;
+    padding-bottom: 25px;
+}
+.price-card-price-1{
+    color: #ffbb42;
+}
+.price-card-btn-1,
+.price-card-btn-2{
+    font-family: "Lato-Regular";
+    font-size: 14px;
+    margin-top: 18px;
+    padding: 11px 18px 11px 18px;
+    border: 1px solid #ffbb42;
+    background:#ffbb42;
+    border-radius: 2px;
+    color: var(--color-white);
+    &:hover{
+        color: red;
+    }
+    &:active{
+        color: green;
+        border-color: green;
+    }
+}
