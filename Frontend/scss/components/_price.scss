@@ -106,7 +106,7 @@
     padding-bottom: 25px;
 }
 .price-card-price-1{
-    color: #ffbb42;
+    color: var(--but-yellow);
 }
 .price-card-btn-1,
 .price-card-btn-2{
@@ -114,8 +114,8 @@
     font-size: 14px;
     margin-top: 18px;
     padding: 11px 18px 11px 18px;
-    border: 1px solid #ffbb42;
-    background:#ffbb42;
+    border: 1px solid var(--but-yellow);
+    background:var(--but-yellow);
     border-radius: 2px;
     color: var(--color-white);
     &:hover{

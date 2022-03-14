@@ -3,6 +3,7 @@
   --text-secondary: #5b5b66;
   --color-white: white;
   --color-text: #394b50;
+  --but-yellow: #ffbb42;
 }
 
 * {
@@ -505,7 +506,7 @@ ul, ol {
 }
 
 .price-card-price-1 {
-  color: #ffbb42;
+  color: var(--but-yellow);
 }
 
 .price-card-btn-1,
@@ -514,8 +515,8 @@ ul, ol {
   font-size: 14px;
   margin-top: 18px;
   padding: 11px 18px 11px 18px;
-  border: 1px solid #ffbb42;
-  background: #ffbb42;
+  border: 1px solid var(--but-yellow);
+  background: var(--but-yellow);
   border-radius: 2px;
   color: var(--color-white);
 }
@@ -527,6 +528,106 @@ ul, ol {
 .price-card-btn-2:active {
   color: green;
   border-color: green;
+}
+
+:root {
+  --header-text:#394b50;
+  --p-text:#7b7b7b;
+}
+
+.section-step-work {
+  padding-bottom: 149px;
+}
+
+.section-strp-work__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-work-card-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 85px;
+}
+
+.step-work-text {
+  text-align: center;
+}
+.step-work-text__title {
+  font-family: "Lato-Black";
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: var(--header-text);
+}
+.step-work-text__desc {
+  font-family: "Lato-Regular";
+  font-size: 14px;
+  margin-top: 0;
+  color: var(--p-text);
+  margin-bottom: 0;
+  padding-bottom: 110px;
+}
+
+.step-work-card-wrap {
+  padding: 0 15px;
+}
+.step-work-card-wrap__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.step-work-card-wrap__title {
+  font-family: "Lato-Black";
+  font-size: 20px;
+  margin-top: 100px;
+  color: var(--header-text);
+  margin-bottom: 24px;
+}
+.step-work-card-wrap__desc {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Lato-Regular";
+  margin-top: 0;
+  color: var(--p-text);
+  line-height: 1.5em;
+}
+.step-work-card-wrap__img {
+  object-fit: contain;
+}
+
+.section-step-work__btn {
+  margin-top: 85px;
+  border: 0.5px solid var(--but-yellow);
+  border-radius: 2px;
+  outline: 0;
+  font-family: "Lato-Regular";
+  font-size: 14px;
+  padding: 16px 27px;
+  background: var(--but-yellow);
+  color: var(--color-white);
+}
+.section-step-work__btn:hover {
+  color: red;
+}
+.section-step-work__btn:active {
+  color: green;
+  border-color: green;
+}
+
+.step-1 {
+  position: absolute;
+  right: -110px;
+  top: -30px;
+}
+
+.step-2 {
+  position: absolute;
+  right: -110px;
+  top: 62px;
 }
 
 /*# sourceMappingURL=main.css.map */
