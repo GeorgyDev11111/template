@@ -1,0 +1,91 @@
+// синхронизация bg и conteinera
+:root{
+    --height-container-happy: 908px;
+}
+// background 
+.section-clients{
+    padding-bottom: 154px;
+}
+.happy-clients-bg-yellow{
+    z-index: -1;
+    height: var(--height-container-happy);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--bg-yellow);
+}
+
+//display content
+.section-clients-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: var(--height-container-happy);
+    width: 100%;
+    // padding-top: 141px;
+}
+//text
+.section-text--clients{
+    color: var(--color-white);
+}
+.section-text--clients > p{
+    padding-bottom: 25px;
+}
+// content grid
+.section-clients-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px ;
+    column-gap: 36px;
+}
+//face
+.section-clients-item__wrap{
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-white);
+    padding:45px 40px ;
+}
+.section-clients-item__wrap > img {
+    margin-right: 30px;
+}
+.clients-card-desc--orange,
+.clients-card-desc--gray{
+    font-family: "Lato-Bold";
+    font-size: 14px;
+    color: #f6772c;
+}
+.clients-card-desc--orange{
+    color: #f6772c;
+}
+.clients-card-desc--gray{
+    color: #99a9ae;
+}
+.clients-card-text{
+    font-family: "Lato-Regular";
+    font-size: 13px;
+    line-height: 1.5em;
+    color: var(--color-text);
+}
+// кавычки
+.quote{
+    position: relative;
+}
+.clients-card-text::before{
+    content: '';
+    width: 16px;
+    height: 13px;
+    position: absolute;
+    top: 0;
+    left: -16px;
+    background: url(../img/up-quotes.png) no-repeat;
+}
+.clients-card-text::after{
+    content: '';
+    width: 16px;
+    height: 13px;
+    position: absolute;
+    bottom: 0;
+    right: 38%;
+    background: url(../img/down_quotes.png) no-repeat;
+}

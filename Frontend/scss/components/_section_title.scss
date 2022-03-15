@@ -1,0 +1,17 @@
+.section-text{
+    text-align: center;
+    &__title{
+        font-family: "Lato-Black";
+        font-size: 25px;
+        margin-top: 5px;
+        margin-bottom: 0;
+        color: var(--header-text);
+    }
+    &__desc{
+        font-family: "Lato-Regular";
+        font-size: 14px;
+        margin-top: 0;
+        color: var(--p-text);
+        margin-bottom: 0;
+    }
+}

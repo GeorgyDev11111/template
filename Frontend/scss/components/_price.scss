@@ -19,11 +19,11 @@
     left: -1px;
 }
 // стили верхнего заголовка + описание
-.section-price-desc{
+.section-text{
     text-align: center;
     margin-bottom: 29px;
 }
-.section-price-h4{
+.section-text__title{
     font-family: "Lato-Black";
     font-weight: 900;
     font-size: 27px;
@@ -31,7 +31,7 @@
     word-spacing: 1px;
     color: var(--color-text);
 }
-.section-price-p{
+.section-text__desc{
     font-family: "Lato-Regular";
     font-size: 16px;
     margin-top: 0;
