@@ -11,7 +11,8 @@
     <title>Business</title>
 </head>
 
-<body>
+<body id="to">
+    <a href="" id="up"></a>
     <header class="header">
        <!--Header -->
        <div class="header-form-bg-royal"></div>
@@ -25,13 +26,13 @@
                 </a>
                 <nav class="nav-panel">
                     <ul class="nav-panel__list">
-                        <li class="nav-panel__item"><a href="#" class="nav-panel__link">HOME</a></li>
-                        <li class="nav-panel__item"><a href="#" class="nav-panel__link">SERVICE</a></li>
-                        <li class="nav-panel__item"><a href="#" class="nav-panel__link">ABOUT US</a></li>
-                        <li class="nav-panel__item"><a href="#" class="nav-panel__link">PRICING TABLE</a></li>
-                        <li class="nav-panel__item"><a href="#" class="nav-panel__link">HOW IT WORK</a></li>
-                        <li class="nav-panel__item"><a href="#" class="nav-panel__link">HAPPY CLIENTS</a></li>
-                        <li class="nav-panel__item"><a href="#" class="nav-panel__link">CONTACT US</a></li>
+                        <li class="nav-panel__item"><a href="#" class="nav-panel__link nav-panel__link--yellow">HOME</a></li>
+                        <li class="nav-panel__item"><a href="#serv" class="nav-panel__link">SERVICE</a></li>
+                        <li class="nav-panel__item"><a href="#aboutus" class="nav-panel__link">ABOUT US</a></li>
+                        <li class="nav-panel__item"><a href="#price" class="nav-panel__link">PRICING TABLE</a></li>
+                        <li class="nav-panel__item"><a href="#howinwork" class="nav-panel__link">HOW IT WORK</a></li>
+                        <li class="nav-panel__item"><a href="#happyclients" class="nav-panel__link">HAPPY CLIENTS</a></li>
+                        <li class="nav-panel__item"><a href="#contactus" class="nav-panel__link">CONTACT US</a></li>
                     </ul>
                 </nav>
             </section>
@@ -45,11 +46,11 @@
                     </p>
                   </div>
                   <div class="header-form-wrap-form">
-                    <form class="form-header">
-                        <div class="form-header__name-ico"><input class=" form-header__content form-header__input" type="text" placeholder="Full Name"></div>
-                        <div class="form-header__email-ico"><input class="form-header__content form-header__input" type="text" placeholder="Email Address"></div>
-                        <div class="form-header__call-ico"><input class=" form-header__content form-header__input" type="text" placeholder="Phone Number"></div>
-                        <button class="form-header__btn" type="submit">REQUEST A QUOTE</button>
+                    <form class="form">
+                        <div class="form__ico--name"><input class=" form__content form__input" type="text" placeholder="Full Name"></div>
+                        <div class="form__ico--email"><input class="form__content form__input" type="text" placeholder="Email Address"></div>
+                        <div class="form__ico--call"><input class=" form__content form__input" type="text" placeholder="Phone Number"></div>
+                        <button class="form__btn" type="submit">REQUEST A QUOTE</button>
                     </form>
                   </div>
               </div>   
@@ -61,10 +62,10 @@
                             <img src="img/slider-img1.png"  alt="" width="452" height="245">
                         </div>
                         <div class="cont-wrap-slider">
-                            <img src="img/Rectangle 5 copy.png"  alt="" width="452" height="245">
+                            <img src="img/slid2.webp"  alt="" width="452" height="245">
                         </div>
                         <div class="cont-wrap-slider">
-                            <img src="img/3.jpg"  alt="" width="452" height="245">
+                            <img src="img/slide3.webp"  alt="" width="452" height="245">
                         </div>
                     </div>
                     </div>
@@ -75,7 +76,7 @@
     <main class="main">
         <!--SERV-->
         <div class="container">
-            <section class="section-serv">
+            <section id="serv" class="section-serv">
                 <div class="section-text wrap-serv-text">
                     <h3 class="section-text__title">OUR SERVICES</h3>
                     <p class="section-text__desc">Lorem Ipsum is simply dummy Business industry.</p>
@@ -150,7 +151,7 @@
         <div class="about-yellow-bg"></div>
     <div class="container">
               <!--About Us-->
-        <section class="section-about-us">
+        <section id="aboutus" class="section-about-us">
             <div class="container-about-us">
                 <div class="wrapp-about-us-img common-about-us">
                     <img src="img/Rectangle 5 copy.png" alt="">
@@ -169,7 +170,7 @@
     </div>
     <div class="container">
         <!--PRICE-->
-    <section class="section-price">
+    <section id="price" class="section-price">
       <div class="price-form-bg-space-gray"></div>
       <div class="wrapp-section-price">
           <div class="section-text">
@@ -227,7 +228,8 @@
     </section>
     
     <!--STEP WORK-->
-    <section class="section-step-work">
+<div id="howinwork"></div>    
+    <section  class="section-step-work">
         <div class="section-strp-work__wrap">
             <div class="section-text">
                 <h4 class="section-text__title">HOW IT WORKS</h4>
@@ -274,7 +276,7 @@
         </div>
     </section>
     <!--HAPPY CLIENTS-->
-    <section class="section-clients">
+    <section id="happyclients" class="section-clients">
         <div class="happy-clients-bg-yellow"></div>
     <div class="section-clients-wrap">
         <div class="section-text section-text--clients">
@@ -358,47 +360,55 @@
         <div class="section-low-form__wrap">
             <div class="section-text">
                 <h4 class="section-text__title">NEWSLETTER</h4>
-                <p class="section-text__desc">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="section-text__desc">Lorem Ipsum is simply dummy Business industry</p>
             </div>
             <div class="section-low-form-wrap">
                 <div class="section-low-form-here">
-                    <form class="low-form" action="">
-                        <input class="low-form__name" class="" type="text" placeholder="Name">
-                        <input class="low-form__email" type="text" placeholder="Email Address">
-                        <button class="low-form__btn">SUBSCRIBE NOW</button>
+                    <form class="form form-news" action="">
+                        <div class="form__ico--name"><input class=" form__content form__input form__input--news form__input--news1 " type="text" placeholder="Full Name"></div>
+                        <div class="form__ico--email"><input class="form__content form__input form__input--news form__input--news2" type="text" placeholder="Email Address"></div>
+                        <button class="form__btn " type="submit">SUBSCRIBE NOW</button>
                     </form>
                 </div>
                 <div class="section-low-img">
-                    <img class="low-form-map" src="1.png" alt="map">
-                    <img class="low-form-banner-center" src="1.png" alt="banner-center">
-                    <img class="low-form-logo" src="1.png" alt="logo">
+                    <img class="section-low-img__img" src="img/Map.png" alt="map">
                 </div>
             </div>
         </div>
     </section>
     </main>
     
-    <footer class="footer">
+    <footer id="contactus" class="footer-main">
     <div class="container">
         <!--Footer-->
         <section class="footer">
             <div class="footer-wrap">
-                <nav class="nav-footer"></nav>
+                <nav class="nav-panel nav-panel--footer">
+                    <ul class="nav-panel__list nav-panel__list--footer">
+                        <li class="nav-panel__item nav-panel__item--footer"><a href="#" class="nav-panel__link nav-panel__link--footer">HOME</a></li>
+                        <li class="nav-panel__item nav-panel__item--footer"><a href="#" class="nav-panel__link nav-panel__link--footer">SERVICE</a></li>
+                        <li class="nav-panel__item nav-panel__item--footer"><a href="#" class="nav-panel__link nav-panel__link--footer">ABOUT US</a></li>
+                        <li class="nav-panel__item nav-panel__item--footer"><a href="#" class="nav-panel__link nav-panel__link--footer">PRICING TABLE</a></li>
+                        <li class="nav-panel__item nav-panel__item--footer"><a href="#" class="nav-panel__link nav-panel__link--footer">HOW IT WORK</a></li>
+                        <li class="nav-panel__item nav-panel__item--footer"><a href="#" class="nav-panel__link nav-panel__link--footer">HAPPY CLIENTS</a></li>
+                        <li class="nav-panel__item nav-panel__item--footer"><a href="#" class="nav-panel__link nav-panel__link--footer">CONTACT US</a></li>
+                    </ul>
+                </nav>
                 <div class="footer-call">
                     <span class="footer-call__value">+987 9976999</span>
                 </div>
                 <div class="footer-contact">
-                    <a href="" class="footer-contact__twitter">
-                        <img class="footer-contact__twitter--img" src="1.png" alt="#">
+                    <a href="" class="footer-contact">
+                        <img class="footer-contact__twitter--img" src="img/twit.png" alt="#">
                     </a>
-                    <a href="" class="footer-contact__facebook">
-                        <img class="footer-contact__facebook--img" src="1.png" alt="#">
+                    <a href="" class="footer-contact">
+                        <img class="footer-contact__facebook--img" src="img/facebook.png" alt="#">
                     </a>
-                    <a href="" class="footer-contact__googleplus">
-                        <img class="footer-contact__googleplus--img" src="1.png" alt="#">
+                    <a href="" class="footer-contact">
+                        <img class="footer-contact__googleplus--img" src="img/+g.png" alt="#">
                     </a>
-                    <a href="" class="footer-contact__linkedin">
-                        <img class="footer-contact__linkedin--img" src="1.png" alt="#">
+                    <a href="" class="footer-contact">
+                        <img class="footer-contact__linkedin--img" src="img/in.png" alt="#">
                     </a>
                 </div>
             </div>
@@ -416,5 +426,6 @@
     <script src="lib/slick.min.js"></script>
 
     <script src="scripts/slider.js" type="text/javascript"></script>
+    <script src="scripts/my.js"></script>
 </body>
 </html>

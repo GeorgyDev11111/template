@@ -5,27 +5,8 @@
     padding: 19.82px 0 21.82px 0;
 }
 .nav-panel{
-    font-size: 14px;
-    &__list{
-        display: flex;
-    }
-    &__link{
-        display: inline-block;
-        padding: 9.5px 20px 9.5px 20px;
-        color: #8e8e8e;
-        border-radius: 2px;
-    }
-
-    &__item:first-child > a:first-child{
+    &__link--yellow{
         color: var(--color-white);
         background: rgba(255, 187, 66, 1);
-    }
-    &__link, &__item:first-child > a:first-child{
-        &:hover{
-            color:#000;
-        }
-        &:active{
-            color: red;
-        }
     }
 }

@@ -1,0 +1,23 @@
+:root{
+  --border-news:#cbcbcb;
+}
+
+.form{
+  &__input--news{
+    border: 1px solid var(--border-news);
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+  }
+  &__input--news2{
+    width: 386px;
+  }
+  &__input--news1{
+    width: 308.01px;
+  }
+}
+// img
+.section-low-img{
+  padding: 53px 41px;
+  border-bottom: 1px solid var(--border-news);
+}

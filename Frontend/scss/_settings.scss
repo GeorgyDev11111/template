@@ -37,3 +37,17 @@ ul,ol{
     margin: 0 auto;
     padding: 0 15px;
 }
+#up{
+    width: 70px;
+    height: 70px;
+    background:red;
+    position: fixed;
+    opacity: 0;
+    right: 20px;
+    bottom: 20px;
+    object-fit: cover;
+    background: url(../img/up.png) no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+    rotate: 90deg;
+}
